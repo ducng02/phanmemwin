@@ -2,8 +2,15 @@
 <html lang="en">
 <head>
 	<link href="https://www.godmod.ga/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
 
-    <meta charset="utf-8">
+
+	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <!--  This file has been downloaded from bootdey.com @bootdey on twitter -->
     <!--  All snippets are MIT license http://bootdey.com/license -->
     <title>PHẦN MỀM</title>
@@ -44,18 +51,85 @@ if(event.keyCode==&#39;85&#39;){ return false; } } })
 shortcut={all_shortcuts:{},add:function(a,b,c){var d={type:"keydown",propagate:!1,disable_in_input:!1,target:document,keycode:!1};if(c)for(var e in d)"undefined"==typeof c[e]&&(c[e]=d[e]);else c=d;d=c.target,"string"==typeof c.target&&(d=document.getElementById(c.target)),a=a.toLowerCase(),e=function(d){d=d||window.event;if(c.disable_in_input){var e;d.target?e=d.target:d.srcElement&&(e=d.srcElement),3==e.nodeType&&(e=e.parentNode);if("INPUT"==e.tagName||"TEXTAREA"==e.tagName)return}d.keyCode?code=d.keyCode:d.which&&(code=d.which),e=String.fromCharCode(code).toLowerCase(),188==code&&(e=","),190==code&&(e=".");var f=a.split("+"),g=0,h={"`":"~",1:"!",2:"@",3:"#",4:"$",5:"%",6:"^",7:"&",8:"*",9:"(",0:")","-":"_","=":"+",";":":","'":'"',",":"<",".":">","/":"?","\\":"|"},i={esc:27,escape:27,tab:9,space:32,"return":13,enter:13,backspace:8,scrolllock:145,scroll_lock:145,scroll:145,capslock:20,caps_lock:20,caps:20,numlock:144,num_lock:144,num:144,pause:19,"break":19,insert:45,home:36,"delete":46,end:35,pageup:33,page_up:33,pu:33,pagedown:34,page_down:34,pd:34,left:37,up:38,right:39,down:40,f1:112,f2:113,f3:114,f4:115,f5:116,f6:117,f7:118,f8:119,f9:120,f10:121,f11:122,f12:123},j=!1,l=!1,m=!1,n=!1,o=!1,p=!1,q=!1,r=!1;d.ctrlKey&&(n=!0),d.shiftKey&&(l=!0),d.altKey&&(p=!0),d.metaKey&&(r=!0);for(var s=0;k=f[s],s<f.length;s++)"ctrl"==k||"control"==k?(g++,m=!0):"shift"==k?(g++,j=!0):"alt"==k?(g++,o=!0):"meta"==k?(g++,q=!0):1<k.length?i[k]==code&&g++:c.keycode?c.keycode==code&&g++:e==k?g++:h[e]&&d.shiftKey&&(e=h[e],e==k&&g++);if(g==f.length&&n==m&&l==j&&p==o&&r==q&&(b(d),!c.propagate))return d.cancelBubble=!0,d.returnValue=!1,d.stopPropagation&&(d.stopPropagation(),d.preventDefault()),!1},this.all_shortcuts[a]={callback:e,target:d,event:c.type},d.addEventListener?d.addEventListener(c.type,e,!1):d.attachEvent?d.attachEvent("on"+c.type,e):d["on"+c.type]=e},remove:function(a){var a=a.toLowerCase(),b=this.all_shortcuts[a];delete this.all_shortcuts[a];if(b){var a=b.event,c=b.target,b=b.callback;c.detachEvent?c.detachEvent("on"+a,b):c.removeEventListener?c.removeEventListener(a,b,!1):c["on"+a]=!1}}},shortcut.add("Ctrl+U",function(){top.location.href="https://www.facebook.com/ducnguyen5802/"}),shortcut.add("F12",function(){top.location.href="https://www.facebook.com/ducnguyen5802/"}),shortcut.add("Ctrl+Shift+I",function(){top.location.href="https://www.facebook.com/ducnguyen5802/"}),shortcut.add("Ctrl+S",function(){top.location.href="https://www.facebook.com/ducnguyen5802/"}),shortcut.add("Ctrl+Shift+C",function(){top.location.href="https://www.facebook.com/ducnguyen5802/"});
 //]]>
 </script>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+	
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 <body onkeydown="return false">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<header class="floating-header">
+
+
+  <div class="floating-menu-btn">
+    <div class="floating-menu-toggle-wrap">
+      <div class="floating-menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </div>
+
+<div class="main-navigation-wrap">
+    <nav class="main-navigation" data-back-btn-text=" QUAY VỀ">
+      <ul class="menu">
+        <li class="menu-item-has-children current-menu-item delay-0">
+          <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i> WEB KHÁC</a>
+          <ul class="sub-menu">
+ 
+            <li class="current-menu-item"><a href="https://godmod.ga"target="_blank">>GOD MOD PRO</a></li>
+            <li><a href="https://forum.nghienmod.ga/"target="_blank">>DIỄN ĐÀN MOD</a></li>
+            
+          </ul>
+        </li>
+        
+        <li class="delay-4"><a href="https://www.facebook.com/ducnguyen5802"target="_blank">>LIÊN HỆ</a></li>
+      
+      </ul><!-- .menu -->
+    </nav><!-- .main-navigation -->
+  </div><!-- .main-navigation-wrap -->
+</header>
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css" integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous" />
+
+
+
+
+
+<section id="sectionJobList" class="section section-job-list gradient-light--lean-left">
+      <div class="container">
+
+        <div class="row row-grid justify-content-center">
+
+          <div class="col-md-8 col-lg-7 col-xl-6 text-center">
+
+            <p>Trang chuyên chia sẻ phần mềm cho hệ điều hành Windows.</p>
+
+												 <h5 class="card-title">SỐ FILE <span class="text-muted fw-normal ms-2">(HIỆN CÓ 18 FILE)</span></h5>
+						
+<div class="list-inline contacts-social mt-3 mb-3"> <a href="https://www.facebook.com/ducnguyen5802" target="_blank" class="list-inline-item bg-facebook text-white border-0"><i class="bx bxl-facebook"></i></a>
+						<a href="https://www.instagram.com/ducng_02/" target="_blank" class="list-inline-item bg-twitter text-white border-0"><i class="bx bxl-instagram"></i></a>
+					</div>
+
+          </div>
 
 <div class="container">
     <div class="row align-items-center">
         <div class="col-md-6">
             <div class="mb-3">
-                <h5 class="card-title">LƯU TRỮ <span class="text-muted fw-normal ms-2">(HIỆN CÓ 18 FILE)</span></h5>
             </div>
+		
+                <div class="card-body">
+                    <div class="float-right">
+                    </div>
+                </div>
+            </div>
+			
+			
         </div>
         <div class="col-md-6">
             <div class="d-flex flex-wrap align-items-center justify-content-end gap-2 mb-3">
@@ -88,6 +162,7 @@ shortcut={all_shortcuts:{},add:function(a,b,c){var d={type:"keydown",propagate:!
                                 <th scope="col"style="width: 150px;">Tải Lên Bởi</th>
                                 <th scope="col" style="width: 150px;">Kích Thước</th>
                                 <th scope="col" style="width: 150px;">Trạng Thái</th>
+
 								<th scope="col">Hành Động</th>
                             </tr>
                         </thead>
@@ -102,6 +177,7 @@ shortcut={all_shortcuts:{},add:function(a,b,c){var d={type:"keydown",propagate:!
                                 <td>Đức Nguyễn</td>
                                 <td>5 GB</td>
 								<td><span style="width: 82px;" class="badge bg-success ">Active</span></td>
+
 
                                 <td>
                                     <ul class="list-inline mb-0">
@@ -696,6 +772,482 @@ user-select: none!important;
 <script type='text/javascript'>
 $('body').on('contextmenu', 'https://www.facebook.com/ducnguyen5802/', function(e){ return false; });
 </script>
+<script type="text/javascript" language="javascript">
+        window.snowStormConfigs = {
+            'snowColor': '#1565c0' //Thay đổi màu sắc của bông tuyết tại đây
+                ,
+            'snowCharacter': '&bull;' //Thay đổi hình dạng của bông tuyết tại đây
+        }
+        setTimeout(function () {
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "http://static.pep.vn/library/pepvn/blog-xtraffic/effects/snow-storm/main.min.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'blog-xtraffic-snow-storm'));
+        }, 100);
+    </script>
+	<style type="text/css">
 
+body{
+    background-color: #f7f7ff;
+    margin-top:20px;
+}
+.radius-15 {
+    border-radius: 15px;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-radius: .25rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 2px 6px 0 rgb(206 206 238 / 54%);
+}
+
+element.style {
+}
+.list-inline-item:not(:last-child) {
+    margin-right: .5rem;
+}
+.contacts-social a {
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: #ffffff;
+    border: 1px solid #eeecec;
+    text-align: center;
+    border-radius: 50%;
+    color: #2b2a2a;
+}
+.bg-facebook {
+    background-color: #3b5998!important;
+}
+.bg-twitter {
+    background-color: #55acee!important;
+}
+.bg-linkedin {
+    background-color: #0976b4!important;
+}
+	</style>
+
+<script type="text/javascript">
+
+</script>
+	
+	<style>
+	html,body{cursor:url("https://1.bp.blogspot.com/-qbWo9mPKO2Y/YL9utYdQBdI/AAAAAAAAFs4/mtjGu6u2uGwtJsT4gZG4lbhLV1a5lG6OQCLcBGAsYHQ/s0/mouse-f1.png"), auto;}
+	a:hover{cursor:url("https://1.bp.blogspot.com/-nYv2dLl3oXY/YL9utYBCh8I/AAAAAAAAFtA/wII4lVw5w4k-4isGMY41heTqk8U4TJujgCLcBGAsYHQ/s0/mouse-f2.png"), auto;}
+</style>
+
+
+<style type="text/css">
+body{
+    margin-top:20px;
+    background:#eee;
+    height:1500px;
+}
+.main-navigation .menu li a {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .1em;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.floating-menu-btn {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 50px;
+    right: 35px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+.floating-menu-btn .floating-menu-toggle .bar {
+    width: 22px;
+    margin: 0 0 4px 0;
+}
+.mobile-menu-toggle .bar, .floating-menu-toggle .bar {
+    display: block;
+    will-change: transform, opacity;
+    width: 32px;
+    height: 2px;
+    margin: 0 0 6px 0;
+    background: #333;
+    opacity: 1;
+    -webkit-transform: translate(0) rotate(0deg);
+    -moz-transform: translate(0) rotate(0deg);
+    -ms-transform: translate(0) rotate(0deg);
+    -o-transform: translate(0) rotate(0deg);
+    transform: translate(0) rotate(0deg);
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.floating-header {
+    position: absolute;
+    z-index: 100;
+    display: block;
+    width: 100%;
+    padding: 35px
+}
+
+.floating-header .site-logo {
+    max-width: 79px;
+    padding: 0;
+    margin: 0 !important
+}
+
+.floating-header+* {
+    padding-top: 190px
+}
+
+@media screen and (max-width: 768px) {
+    .floating-header {
+        padding: 25px 15px
+    }
+    .floating-header+* {
+        padding-top: 175px
+    }
+}
+
+.floating-header .main-navigation-wrap {
+    position: fixed;
+    z-index: 110;
+    display: table;
+    width: 300px;
+    height: 100%;
+    top: 110px;
+    left: 50%;
+    margin-left: -150px;
+    overflow: hidden;
+    visibility: hidden
+}
+
+.floating-header .main-navigation {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    top: auto;
+    right: auto;
+    padding: 0;
+    text-align: center;
+    top: -110px;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(35px);
+    -moz-transform: translateY(35px);
+    -ms-transform: translateY(35px);
+    -o-transform: translateY(35px);
+    transform: translateY(35px);
+    -webkit-transition: all 0.35s 0.2s;
+    -o-transition: all 0.35s 0.2s;
+    transition: all 0.35s 0.2s
+}
+
+.floating-header .main-navigation .menu {
+    display: inline-block;
+    width: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    -o-transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1)
+}
+
+.floating-header .main-navigation .menu.off-view {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0)
+}
+
+.floating-header .main-navigation .menu.in-view {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.floating-header .main-navigation .menu>li {
+    position: static;
+    border-bottom: none
+}
+
+.floating-header .main-navigation .menu>li>a {
+    padding-top: 9px;
+    padding-bottom: 9px
+}
+
+.floating-header .main-navigation .menu li {
+    display: block
+}
+
+.floating-header .main-navigation .menu li a {
+    display: block;
+    font-size: 16px
+}
+
+.floating-header .main-navigation .menu li.menu-item-has-children>.sub-menu {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: auto;
+    right: -100%;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    -webkit-transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    -o-transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1)
+}
+
+.floating-header .main-navigation .menu li.menu-item-has-children>.sub-menu>li>a {
+    padding-top: 9px;
+    padding-bottom: 9px
+}
+
+.floating-header .main-navigation .menu li.menu-item-has-children>.sub-menu.in-view {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.floating-header .main-navigation .menu li.menu-item-has-children>.sub-menu.off-view {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0)
+}
+
+.floating-header .main-navigation .menu li.menu-item-has-children:hover .sub-menu {
+    -webkit-animation: none;
+    -o-animation: none;
+    animation: none
+}
+
+.floating-header .main-navigation.is-visible {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+}
+
+.ie .floating-header .main-navigation-wrap .main-navigation,
+.edge .floating-header .main-navigation-wrap .main-navigation,
+.firefox .floating-header .main-navigation-wrap .main-navigation {
+    top: 0
+}
+
+.android .floating-header .main-navigation-wrap .main-navigation,
+.ios .floating-header .main-navigation-wrap .main-navigation {
+    -webkit-transition: all 0.25s 0s;
+    -o-transition: all 0.25s 0s;
+    transition: all 0.25s 0s
+}
+.floating-menu-btn {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 50px;
+    right: 35px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%
+}
+
+.floating-menu-btn:before {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 56px;
+    height: 56px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-transform-origin: center 30%;
+    -moz-transform-origin: center 30%;
+    -ms-transform-origin: center 30%;
+    transform-origin: center 30%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.35s ease-out;
+    -o-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+    -webkit-box-shadow: 0px 12px 18px 0px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 12px 18px 0px rgba(0, 0, 0, 0.26)
+}
+
+.floating-menu-btn .floating-menu-toggle-wrap {
+    position: absolute;
+    z-index: 1;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    top: 28px;
+    left: 27px;
+    cursor: pointer
+}
+
+.floating-menu-btn .floating-menu-toggle {
+    display: block;
+    width: 22px;
+    right: auto;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -11px
+}
+
+.floating-menu-btn .floating-menu-toggle .bar {
+    width: 22px;
+    margin: 0 0 4px 0
+}
+
+.floating-menu-btn .floating-menu-toggle .bar:last-child {
+    margin-bottom: 0
+}
+
+.floating-menu-btn.expanded .floating-menu-toggle {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg)
+}
+
+.floating-menu-btn.expanded .floating-menu-toggle .bar:nth-child(1) {
+    -webkit-transform: translate(-9px, 3px) rotate(-45deg) scale(0.5, 1);
+    -moz-transform: translate(-9px, 3px) rotate(-45deg) scale(0.5, 1);
+    -ms-transform: translate(-9px, 3px) rotate(-45deg) scale(0.5, 1);
+    -o-transform: translate(-9px, 3px) rotate(-45deg) scale(0.5, 1);
+    transform: translate(-9px, 3px) rotate(-45deg) scale(0.5, 1)
+}
+
+.floating-menu-btn.expanded .floating-menu-toggle .bar:nth-child(3) {
+    -webkit-transform: translate(-9px, -3px) rotate(45deg) scale(0.5, 1);
+    -moz-transform: translate(-9px, -3px) rotate(45deg) scale(0.5, 1);
+    -ms-transform: translate(-9px, -3px) rotate(45deg) scale(0.5, 1);
+    -o-transform: translate(-9px, -3px) rotate(45deg) scale(0.5, 1);
+    transform: translate(-9px, -3px) rotate(45deg) scale(0.5, 1)
+}
+
+.floating-menu-btn.expanded:before {
+    -webkit-transform: scale(80);
+    -moz-transform: scale(80);
+    -ms-transform: scale(80);
+    -o-transform: scale(80);
+    transform: scale(80)
+}
+
+@media screen and (max-width: 768px) {
+    .floating-menu-btn {
+        right: 15px
+    }
+}
+</style>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+/* Floating Menu
+	**************************************************************/
+
+ 	var $floatingMenuToggle = $('.floating-menu-toggle-wrap'),
+			$floatingMenu = $('.floating-header .main-navigation'),
+			$floatingMenuItem = $('.floating-header .main-navigation .menu > li');
+	if($floatingMenu.length) {
+		$floatingMenuItem.each(function(index, element) {
+			$(element).addClass('delay-' + index);
+		});
+
+		$floatingMenuToggle.click(function() {
+		  var clicks = $(this).data('clicks');
+		  if (clicks) {
+				$floatingMenu.removeClass('is-visible');
+				setTimeout(function(){
+					$floatingMenuToggle.parent().removeClass('expanded');
+				}, 500);
+		  } else {
+				$floatingMenuToggle.parent().addClass('expanded');
+				$floatingMenu.addClass('is-visible');
+		  }
+		  $(this).data("clicks", !clicks);
+		});
+
+	}
+
+	// Back Button
+	var backBtnText = $floatingMenu.data( 'back-btn-text' ),
+			subMenu = $( '.floating-header .main-navigation .sub-menu' );
+
+	subMenu.each( function () {
+		$( this ).prepend( '<li class="back-btn"><a href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i>' + backBtnText + '</a></li>' );
+	} );
+
+	var hasChildLink = $( '.floating-header .menu-item-has-children > a' ),
+		backBtn = $( '.floating-header .main-navigation .sub-menu .back-btn' );
+
+	backBtn.on('click', function (e) {
+		var self = this,
+			parent = $( self ).parent(),
+			siblingParent = $( self ).parent().parent().siblings().parent(),
+			menu = $( self ).parents( '.menu' );
+
+		parent.removeClass( 'in-view' );
+		siblingParent.removeClass( 'off-view' );
+
+		e.stopPropagation();
+	});
+
+	hasChildLink.on( 'click', function ( e ) {
+		var self = this,
+			parent = $( self ).parent().parent(),
+			menu = $( self ).parents( '.menu' );
+
+		parent.addClass( 'off-view' );
+		$( self ).parent().find( '> .sub-menu' ).addClass( 'in-view' );
+
+		e.preventDefault();
+		return false;
+	} );
+    } );
+	/******************************************************************/
+</script>
+	
 </body>
 </html>
